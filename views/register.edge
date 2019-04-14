@@ -30,21 +30,55 @@
       <form action="/users/register" method="POST" encType="multipart/form-data">
         <div class="control-group">
           <div class="form-group floating-label-form-group controls">
-            <label>Username</label>
+            <h3>What Would You Like Your Username To Be?</h3>
+            <label>What Would You Like Your Username To Be?</label>
           <input type="text" value="{{ data.username || '' }}" name="username" placeholder="Username" class="form-control">
           </div>
         </div>
         <div class="control-group">
           <div class="form-group floating-label-form-group controls">
-            <label>Email</label>
+            <h3>Whats Your Email?</h3>
+            <label>Whats Your Email?</label>
             <input type="email" value="{{ data.email || '' }}" name="email" placeholder="Email" class="form-control">
           </div>
         </div>
         <div class="control-group">
           <div class="form-group floating-label-form-group controls">
-            <label>Password</label>
-            <input type="password" name="password" placeholder="Password" class="form-control">
+            <h3>What School Do You Attend?</h3>
+            <label>What School Do You Attend?</label>
+            <input type="text" value="{{ data.school || '' }}" name="school" placeholder="School" class="form-control">
           </div>
+          <div class="form-group floating-label-form-group controls">
+            <h3>What Year Are You In School?</h3>
+            <label>What Year Are You In School?</label>
+            <input type="text" value="{{ data.year || '' }}" name="year" placeholder="Year" class="form-control">
+          </div>
+          <div class="form-group floating-label-form-group controls">
+            <h3>How Many Hackathons Have You Registered And Confirmed Attendance To?</h3>
+            <label>How Many Hackathons Have You Registered And Confirmed Attendance To?</label>
+            <input type="text" value="{{ data.registered || '' }}" name="registered" placeholder="registered" class="form-control">
+          </div>
+          <div class="form-group floating-label-form-group controls">
+            <h3>How Many Hackathons Have You Checked-in/Showed Up To?</h3>
+            <label>How Many Hackathons Have You Checked-in/Showed Up To?</label>
+            <input type="text" value="{{ data.checkedin || '' }}" name="checkedin" placeholder="Checkedin" class="form-control">
+          </div>
+          <div class="form-group floating-label-form-group controls">
+            <h3>How Many Projects Have Your Submitted?</h3>
+            <label>How Many Projects Have Your Submitted?</label>
+            <input type="text" value="{{ data.submitted || '' }}" name="submitted" placeholder="Submitted" class="form-control">
+          </div>
+          <div class="form-group floating-label-form-group controls">
+            <label>How Many Prizes Have You Won?</label>
+            <input type="text" value="{{ data.won || '' }}" name="won" placeholder="Prized Won" class="form-control">
+          </div>
+          <!--
+          <div class="form-group floating-label-form-group controls">
+            <label>Please Upload A Photo Of Your Face</label>
+            <h3>Please Upload A Photo Of Your Face</h3>
+            <input type="file" value="{{ data.photo || '' }}" name="file" placeholder="Upload File" class="form-control">
+          </div>
+        -->
         </div>
         <div class="form-group my-4 text-center">
           <button class="btn btn-primary">Register Now</button>
